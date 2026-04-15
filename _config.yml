@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Steven Raphael"
 title_separator          : "|"
 name                     : &name "Steven Raphael"
-description              : &description "Steven Raphael — James D. Marver Professor of Public Policy, UC Berkeley"
+description              : &description "Steven Raphael is the James D. Marver Professor of Public Policy at UC Berkeley's Goldman School of Public Policy and Director of the Institute for Research on Labor and Employment. Research on labor economics, incarceration, criminal justice reform, and immigration."
 url                      : https://stevenpraphael.github.io
 baseurl                  : ""
 repository               : "stevenpraphael/stevenpraphael.github.io"
