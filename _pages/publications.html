@@ -5,32 +5,63 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<p>A full list is also available on <a href="{{ site.author.googlescholar }}">Google Scholar</a>. For the most current working papers, see also the <a href="https://irle.berkeley.edu/">Institute for Research on Labor and Employment</a>.</p>
 
+<h2>Books and Edited Volumes</h2>
+<hr />
 
+<ul>
+<li>Gonzales, Roberto G., and Steven Raphael (editors). <em>Undocumented Immigrants and Their Experience with Illegality</em>. RSF: The Russell Sage Foundation Journal of the Social Sciences, 3(4), 2017.</li>
+<li>Raphael, Steven. <em>The New Scarlet Letter? Negotiating the U.S. Labor Market with a Criminal Record</em>. W.E. Upjohn Institute for Employment Research, Kalamazoo, MI, 2014.</li>
+<li>Raphael, Steven, and Michael Stoll. <em>Why Are So Many Americans in Prison?</em> Russell Sage Foundation, 2013.</li>
+<li>Card, David, and Steven Raphael (editors). <em>Immigration, Poverty, and Socioeconomic Inequality</em>. Russell Sage Foundation, 2013.</li>
+<li>Raphael, Steven, and Michael Stoll (editors). <em>Do Prisons Make Us Safer? The Benefits and Costs of the Prison Boom</em>. Russell Sage Foundation, 2009.</li>
+</ul>
 
+<h2>Recent and Selected Journal Articles</h2>
+<hr />
+
+<ul>
+<li>Bushway, Shawn, Andrew Jordan, Derek Neal, and Steven Raphael. "Understanding Race Disparities in Criminal Court Outcomes." <em>Journal of Quantitative Criminology</em> 41, no. 3 (2025): 86–135.</li>
+<li>Lacoe, Johanna, Brett Fischer, and Steven Raphael. "The Effect of a Pre-Arraignment Legal Representation Pilot on Pretrial Release and Criminal Case Outcomes." <em>RSF: The Russell Sage Foundation Journal of the Social Sciences</em> (2024): 1–23.</li>
+<li>Shem-Tov, Yotam, Steven Raphael, and Alissa Skog. "Can Restorative Justice Conferencing Reduce Recidivism? Evidence From the Make-it-Right Program." <em>Econometrica</em> 92, no. 1 (2024): 61–78.</li>
+<li>Augustine, Elsa, Johanna Lacoe, Steven Raphael, and Alissa Skog. "The Impact of Felony Diversion in San Francisco." <em>Journal of Policy Analysis and Management</em> 41, no. 3 (2022): 683–709.</li>
+<li>Rozo, Sandra, Theresa Anders, and Steven Raphael. "Deportation, Crime, and Victimization." <em>Journal of Population Economics</em> 34, no. 1 (2021): 141–166.</li>
+<li>Raphael, Steven. "The Intended and Unintended Consequences of Ban-the-Box." <em>Annual Review of Criminology</em> 4 (2021): 191–207.</li>
+<li>Lofstrom, Magnus, Brandon Martin, and Steven Raphael. "The Effect of Sentencing Reform on Racial and Ethnic Disparities in Involvement with the Criminal Justice System: The Case of California's Proposition 47." <em>Criminology &amp; Public Policy</em> 19, no. 4 (2020): 1165–1207.</li>
+<li>MacDonald, John, and Steven Raphael. "The Effect of Scaling Back Punishment on Racial Disparities in Criminal Case Outcomes." <em>Criminology &amp; Public Policy</em> 19, no. 4 (2020): 1139–1164.</li>
+<li>Raphael, Steven, and Sandra Rozo. "Racial Disparities in the Acquisition of Juvenile Arrest Records." <em>Journal of Labor Economics</em> 37, no. S1 (2019): S126–S159.</li>
+<li>Lofstrom, Magnus, and Steven Raphael. "Crime, the Criminal Justice System, and Socioeconomic Inequality." <em>Journal of Economic Perspectives</em> 30, no. 2 (2016): 103–126.</li>
+<li>Lofstrom, Magnus, and Steven Raphael. "Incarceration and Crime: Evidence from California's Public Safety Realignment." <em>Annals of the American Academy of Political and Social Science</em> 664, no. 1 (2016): 196–220.</li>
+<li>Buonanno, Paolo, and Steven Raphael. "Incarceration and Incapacitation: Evidence from the 2006 Italian Collective Pardon." <em>American Economic Review</em> 103, no. 6 (2013): 2437–2465.</li>
+<li>Raphael, Steven, and Michael Stoll. "Assessing the Contribution of the Deinstitutionalization of the Mentally Ill to Growth in the U.S. Incarceration Rate." <em>Journal of Legal Studies</em> 42, no. 1 (2013): 187–222.</li>
+<li>Johnson, Rucker, and Steven Raphael. "How Much Crime Reduction Does the Marginal Prisoner Buy?" <em>Journal of Law and Economics</em> 55, no. 2 (2012): 275–310.</li>
+<li>Johnson, Rucker, and Steven Raphael. "The Effect of Male Incarceration Dynamics on AIDS Infection Rates Among African-American Women and Men." <em>Journal of Law and Economics</em> 52, no. 2 (2009): 251–293.</li>
+<li>Holzer, Harry, Steven Raphael, and Michael Stoll. "Perceived Criminality, Criminal Background Checks and the Racial Hiring Practices of Employers." <em>Journal of Law and Economics</em> 49, no. 2 (2006): 451–480.</li>
+<li>Quigley, John, and Steven Raphael. "Is Housing Unaffordable? Why Isn't It More Affordable?" <em>Journal of Economic Perspectives</em> 18, no. 1 (2004): 191–214.</li>
+<li>Raphael, Steven, and Rudolf Winter-Ebmer. "Identifying the Effect of Unemployment on Crime." <em>Journal of Law and Economics</em> 44, no. 1 (2001): 259–284.</li>
+<li>Gaviria, Alejandro, and Steven Raphael. "School-Based Peer Effects and Juvenile Behavior." <em>Review of Economics and Statistics</em> 83, no. 2 (2001): 257–268.</li>
+</ul>
+
+<p><em>For a complete list of journal articles, book chapters, and monographs, see the <a href="{{ base_path }}/files/cv.pdf">CV</a>.</em></p>
+
+<h2>Policy Reports</h2>
+<hr />
+
+<ul>
+<li>Bird, Mia, Omair Gill, Johanna Lacoe, Molly Pickard, Steven Raphael, and Alissa Skog. <em>Three Strikes in California</em>. California Policy Lab, UC Berkeley, 2022.</li>
+<li>Lofstrom, Magnus, Brandon Martin, and Steven Raphael. <em>Proposition 47's Impact on Racial Disparity in Criminal Justice Outcomes</em>. Public Policy Institute of California, 2020.</li>
+<li>Raphael, Steven, and Michael Stoll. <em>A New Approach to Reducing Incarceration While Maintaining Low Rates of Crime</em>. The Hamilton Project, Brookings Institution, 2014.</li>
+<li>Lofstrom, Magnus, and Steven Raphael. <em>Public Safety Realignment and Crime Rates in California</em>. Public Policy Institute of California, 2013.</li>
+</ul>
+
+<h2>Selected Working Papers</h2>
+<hr />
+
+<ul>
+<li>Liévano, Maura, and Steven Raphael. "The Effect of Redeploying Police Officers from Plain Clothes Special Assignment to Uniformed Foot Beat Patrols on Street Crime." California Policy Lab Report, UC Berkeley, 2018.</li>
+<li>Davidson, Janet, George King, Jens Ludwig, and Steven Raphael. "Managing Pretrial Misconduct: An Experimental Evaluation of HOPE Pretrial." GSPP Working Paper, 2018.</li>
+<li>Raphael, Steven, and Sarah Tahamont. "The Effect of Mandatory Minimum Punishments on the Efficiency of Criminal Justice Resource Allocation." GSPP Working Paper, UC Berkeley, 2016.</li>
+</ul>
